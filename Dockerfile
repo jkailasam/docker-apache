@@ -15,11 +15,9 @@ RUN apt-get update -q && \
 apt-get install software-properties-common -qy && \
 LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
 apt-get update -q && \
-apt-get install $BASE_APTLIST -qy
-
+apt-get install $BASE_APTLIST -qy && \
 # cleanup 
-RUN echo -e "Starting cleanup job\n\n\n\n\n"
-RUN apt-get autoremove -qy && \
+apt-get autoremove -y && \
 apt-get clean -y && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
