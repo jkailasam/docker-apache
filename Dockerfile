@@ -17,7 +17,7 @@ LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
 apt-get update -q && \
 apt-get install $BASE_APTLIST -qy && \
 # cleanup 
-apt-get autoremove -qy \
+apt-get autoremove -qy && \
 apt-get clean -y && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
