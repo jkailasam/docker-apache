@@ -2,7 +2,7 @@ FROM jeeva420/xenial-base
 MAINTAINER Jeeva Kailasam <kjeeva@ymail.com>
 
 # Set correct environment variables
-ENV BASE_APTLIST="apache2 libapache2-mod-fastcgi libapache2-mod-php5.6 openssl php5.6 php5.6-cli php5.6-curl php5.6-fpm samba samba-vfs-modules" LANG="en_US.UTF-8" LANGUAGE="en_US:en" LC_ALL="en_US.UTF-8" LANG="LANG=en_US.UTF-8"
+ENV BASE_APTLIST="apache2 libapache2-mod-php5.6 openssl php5.6 php5.6-cli php5.6-curl" LANG="en_US.UTF-8" LANGUAGE="en_US:en" LC_ALL="en_US.UTF-8" LANG="LANG=en_US.UTF-8"
 
 # Set the locale
 RUN locale-gen en_US.UTF-8
