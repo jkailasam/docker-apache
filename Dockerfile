@@ -29,6 +29,5 @@ a2enmod $APACHE_MODULES
 
 # expose ports
 EXPOSE 80 443
-
 # set volumes
 VOLUME /config
