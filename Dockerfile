@@ -4,7 +4,7 @@ MAINTAINER Jeeva Kailasam <kjeeva@ymail.com>
 # Set correct environment variables
 ARG BASE_APTLIST="apache2 php7.0 libapache2-mod-php7.0 lynx-cur openssl"
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG APACHE_MODULES=a2enmod php5.6 rewrite proxy proxy_http proxy_ajp deflate headers proxy_balancer proxy_connect proxy_html xml2enc
+ARG APACHE_MODULES="php7.0 rewrite proxy proxy_http proxy_ajp deflate headers proxy_balancer proxy_connect proxy_html xml2enc"
 
 # install main packages
 RUN apt-get update -q && \
